@@ -1,12 +1,22 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+      <router-link to="/">Home Page</router-link>  |
+      <router-link to="/TeamPage">Team Page</router-link>  |
+      <router-link to="/LeagueRules"> League Rules</router-link>  |
+      <router-link to="/LeaguePhotos"> Photos Page</router-link>
+      </nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+
+export default {
+  name: 'app',
+};
+
+</script>
 
 <style>
 #app {
@@ -23,10 +33,10 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: red;
 }
 </style>
