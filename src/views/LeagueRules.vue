@@ -13,8 +13,8 @@
 
 <style scoped>
 img {
-    height: 60vh;
-    width: 100vw
+    width: 90vw;
+    height: 55vh
 }
 
 </style>
