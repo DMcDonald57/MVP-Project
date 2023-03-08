@@ -9,7 +9,7 @@
 <script>
 
 export default {
-  name: 'TeamPage',
+  name: 'TeamPage1',
 }
 </script>
 

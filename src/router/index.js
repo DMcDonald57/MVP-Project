@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '@/views/HomePage.vue';
-import TeamPage from '@/views/TeamPage.vue';
+import TeamPage1 from '@/views/TeamPage1.vue';
 import MainBanner from '@/components/MainBanner';
 import LeagueRules from '@/views/LeagueRules.vue';
-import LeaguePhotos from '@/views/LeaguePhotos'
+import LeaguePhotos from '@/views/LeaguePhotos';
+import TeamPage2 from '@/views/TeamPage2.vue'
 
 Vue.use(VueRouter)
 
@@ -14,8 +15,8 @@ const routes = [
     component: HomePage
   },
   {
-    path: "/TeamPage",
-    component: TeamPage
+    path: "/TeamPage1",
+    component: TeamPage1
   },
   {
     path: "/components/MainBanner",
@@ -28,6 +29,10 @@ const routes = [
   {
     path: "/LeaguePhotos",
     component: LeaguePhotos
+  },
+  {
+    path: "/TeamPage2",
+    component: TeamPage2
   }
 ]
 
