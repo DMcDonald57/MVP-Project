@@ -3,8 +3,10 @@
     <nav>
       <router-link to="/">Home Page</router-link>  |
       <router-link to="/LeagueRules"> League Rules</router-link>  |
-      <router-link to="/LeaguePhotos"> Photos Page</router-link>  |
-      <v-btn class="loginbutton" varient="outline">Coaches Log In</v-btn>
+      <router-link to="/LeaguePhotos"> Photos Page</router-link>
+    </nav>
+    <nav>
+      <router-link to="/coachAccess"> Coaches! Login Here</router-link>
     </nav>
     <nav>
       <router-link to="/TeamPage1">Red Team</router-link>  |
@@ -42,12 +44,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: red;
-}
-v-btn {
-  font-weight: bold;
-  color: black;
-}
-.loginbutton-exact-active{
-  color: red
 }
 </style>

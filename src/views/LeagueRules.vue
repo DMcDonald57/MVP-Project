@@ -1,7 +1,6 @@
 <template>
     <div>
         <img src="https://i.ytimg.com/vi/YLU6W6AYQto/maxresdefault.jpg" alt="Banner" >
-
     </div>
 </template>
 

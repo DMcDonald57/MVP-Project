@@ -5,7 +5,8 @@ import TeamPage1 from '@/views/TeamPage1.vue';
 import MainBanner from '@/components/MainBanner';
 import LeagueRules from '@/views/LeagueRules.vue';
 import LeaguePhotos from '@/views/LeaguePhotos';
-import TeamPage2 from '@/views/TeamPage2.vue'
+import TeamPage2 from '@/views/TeamPage2.vue';
+import coachAccess from '@/views/coachAccess.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,10 @@ const routes = [
   {
     path: "/TeamPage2",
     component: TeamPage2
+  },
+  {
+    path: "/coachAccess",
+    component: coachAccess
   }
 ]
 
