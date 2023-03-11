@@ -14,37 +14,14 @@
 
 <script>
 import MainBanner from '@/components/MainBanner';
-import axios from 'axios'
 
 export default {
   name: 'HomePage',
   components: {
     MainBanner
   },
+}
 
-    data() {
-      return{
-        email : "",
-        password: ""
-      }
-    },
-methods: {
-  coach_login(){
-    axios.request({
-      method : "POST",
-      url : "http://127.0.0.1:5000/api/coachsession",
-      data : {
-        email : this.email,
-        password : this.password
-      }
-    }).then((response) => {
-      response ("You are logged in Coach")
-    }).catch (() => {
-      alert("Login Failed")
-    })
-  }
-}
-}
 </script>
 
 <style scoped>

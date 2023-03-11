@@ -9,8 +9,8 @@
       <router-link to="/coachAccess"> Coaches! Login Here</router-link>
     </nav>
     <nav>
-      <router-link to="/TeamPage1">Red Team</router-link>  |
-      <router-link to="/TeamPage2">Blue Team</router-link>
+      <router-link to="/TeamPage1">The Fighting Foodies</router-link>  |
+      <router-link to="/TeamPage2">Okatok Pizza Pirates</router-link>
     </nav>
     <router-view/>
   </div>
