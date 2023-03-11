@@ -15,7 +15,7 @@
             
         </v-form>
                     <v-col>
-                        <v-btn class="button" @click="coach_login">Submit</v-btn> 
+                        <v-btn class="button" @click="coach_login">Play Ball!</v-btn> 
                         <!-- <p>or</p> -->
                         <!-- <v-btn @click="coach_logout">Update Profile</v-btn> -->
                     </v-col>
@@ -45,7 +45,8 @@ methods: {
         password : this.password
         }
     }).then((response) => {
-        response ("You are logged in Coach")
+        response (this.$router.push("./HomePage"))
+        
     }).catch (() => {
     alert("Login Failed")
     })
