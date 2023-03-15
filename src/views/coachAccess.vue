@@ -45,7 +45,8 @@ methods: {
         password : this.password
         }
     }).then((response) => {
-        response (this.$router.push("./HomePage"))
+        console.log(response)
+        this.$router.push("./")
         
     }).catch (() => {
     alert("Login Failed")
