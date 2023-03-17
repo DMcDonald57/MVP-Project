@@ -4,9 +4,10 @@ import HomePage from '@/views/HomePage.vue';
 import TeamPage1 from '@/views/TeamPage1.vue';
 import MainBanner from '@/components/MainBanner';
 import LeagueRules from '@/views/LeagueRules.vue';
-import LeaguePhotos from '@/views/LeaguePhotos';
+import LeagueStandings from '@/views/LeagueStandings';
 import TeamPage2 from '@/views/TeamPage2.vue';
-import coachAccess from '@/views/coachAccess.vue'
+import coachAccess from '@/views/coachAccess.vue';
+import team1Roster from '@/views/team1Roster.vue'
 
 Vue.use(VueRouter)
 
@@ -28,8 +29,8 @@ const routes = [
     component: LeagueRules
   },
   {
-    path: "/LeaguePhotos",
-    component: LeaguePhotos
+    path: "/LeagueStandings",
+    component: LeagueStandings
   },
   {
     path: "/TeamPage2",
@@ -38,6 +39,10 @@ const routes = [
   {
     path: "/coachAccess",
     component: coachAccess
+  },
+  {
+    path: '/team1Roster',
+    component: team1Roster
   }
 ]
 

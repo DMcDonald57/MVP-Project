@@ -46,7 +46,7 @@ methods: {
         }
     }).then((response) => {
         console.log(response)
-        this.$router.push("./")
+        this.$router.push("./team1Roster")
         
     }).catch (() => {
     alert("Login Failed")

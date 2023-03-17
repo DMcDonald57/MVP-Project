@@ -5,6 +5,11 @@
       <div v-for="player in players" :key="player.first_name">
       <h3>{{player.first_name}} {{player.last_name}} {{player.position_played }}</h3>
       </div>
+        <v-col>
+          <v-btn><router-link to="/coachAccess"> Coaches! Login Here and update your Roster</router-link></v-btn>
+
+          <!-- <v-btn @click="coach_logout">Update Profile</v-btn> -->
+        </v-col>
     </div>
     
 </template>
@@ -34,7 +39,7 @@ methods: {
       }).catch ((error) => {
         console.log(error)
       })
-    }
+    },
   },
   mounted() {
     this.team_roster();

@@ -3,11 +3,11 @@
     <nav>
       <router-link to="/">Home Page</router-link>  |
       <router-link to="/LeagueRules"> League Rules</router-link>  |
-      <router-link to="/LeaguePhotos"> Photos Page</router-link>
+      <router-link to="/LeagueStandings"> Standings and Schedule</router-link>
     </nav>
-    <nav>
+    <!-- <nav>
       <router-link to="/coachAccess"> Coaches! Login Here</router-link>
-    </nav>
+    </nav> -->
     <nav>
       <router-link to="/TeamPage1">The Fighting Foodies</router-link>  |
       <router-link to="/TeamPage2">Okatok Pizza Pirates</router-link>
