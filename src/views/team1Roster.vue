@@ -32,7 +32,7 @@ methods: {
             method : "GET",
             url : "http://127.0.0.1:5000/api/rosterupdate",
             data: {
-                coach_id : ""
+                coach_id : this.coach_id
             }
         }).then((response) => {
         this.players = response.data
@@ -40,7 +40,7 @@ methods: {
         console.log(error)
         })
     },
-  },
+    },
 }
 </script>
 
