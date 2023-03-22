@@ -24,7 +24,7 @@ import axios from "axios"
             league_standings(){
                 axios.request({
                     method : "GET",
-                    url : "http://127.0.0.1:5000/api/standings"
+                    url : "http://127.0.0.1:5000/api/teamstandings"
                 }).then((response) => {
                     this.standings = response.data
                 }).catch ((error) => {
