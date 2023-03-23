@@ -7,7 +7,9 @@
                         <v-text-field v-model="email" label="Email" required></v-text-field>
                     </v-col>
                     <v-col cols="12" md="4">
-                        <v-text-field v-model="password" label="Password" required></v-text-field>
+                        <v-text-field v-model="password" label="Password" required
+                        :type="show ?'text':'password'" :append-icon="show ?'mdi-eye':
+                        'mdi-eye-off'" @click:append="show=!show"></v-text-field>
                     </v-col>
                     
                 </v-row>
@@ -31,8 +33,9 @@ import axios from "axios"
 
     data() {
         return{
-        email : "",
-        password: ""
+            email : "",
+            password: "",
+            show:false
         }
     },
 methods: {
