@@ -7,10 +7,9 @@
             <v-btn color="black">Delete Player</v-btn>
             <v-btn color="black">Update Player Information</v-btn>
         </div>
-        <div v-for="player in players" :key="player.first_name">
-    <h3>{{player.first_name}} {{player.last_name}} {{player.phone_num}} {{player.email}} {{player.position_played }}</h3>
-    </div>
-
+            <div v-for="player in players" :key="player.first_name">
+            <h3>{{player.first_name}} {{player.last_name}} {{player.phone_num}} {{player.email}} {{player.position_played }}</h3>
+        </div>
     </div>
 </template>
 
@@ -18,21 +17,21 @@
 
 import axios from "axios"
 
-    export default {
-        name: 'team1Roster',
-        
-        data:() => {
-            return{
-            players: []
-        }
-    },
+export default {
+    name: 'team1Roster',
+    
+    data:() => {
+        return{
+        players: [],
+    }
+},
 methods: {
     teamFullRoster(){
         axios.request({
             method : "GET",
             url : "http://127.0.0.1:5000/api/rosterupdate",
-            data: {
-                team_id : []
+            params: {
+                team_id : this.team_id
             }
         }).then((response) => {
         this.players = response.data
